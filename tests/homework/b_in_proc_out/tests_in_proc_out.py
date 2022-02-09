@@ -12,8 +12,8 @@ the function multiply_numbers.
 from src.homework.b_in_proc_out.output import get_number
 from src.homework.b_in_proc_out.output import multiply_numbers
 
-num1 = int(input())
-num2 = int(input())
+num1 = input()
+num2 = input()
 
 class Test_Config(unittest.TestCase):
 
