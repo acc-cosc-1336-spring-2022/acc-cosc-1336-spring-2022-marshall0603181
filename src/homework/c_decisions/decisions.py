@@ -1,8 +1,8 @@
 
 #from webbrowser import get
 
-option = float(input("input 'option' value:"))
-total = float(input("input 'total' value: "))
+option = float(input("input dividend: "))
+total = float(input("input divisor: "))
 
 def get_options_ratio(option, total):
     return option / total
