@@ -13,7 +13,7 @@ x = int(get_options_ratio(num1, num2))
 
 def get_faculty_rating():
     return x
-if 0.9 > x > 1:
+if 0.9 >= x > 1:
     print('Excellent')
 if x > 0.8:
     print('Very Good')
