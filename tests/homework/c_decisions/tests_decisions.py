@@ -1,27 +1,19 @@
 import unittest
 from src.homework.c_decisions.decisions import get_options_ratio
-#from src.homework.c_decisions.decisions import get_faculty_rating
+from src.homework.c_decisions.decisions import get_faculty_rating
 
 class Test_Config(unittest.TestCase):
     def test_get_options_ratio(self):
-        self.assertEqual(25, 5 + 20)
-        self.assertEqual(30, 10 + 20)
-    def test_get_faculty_rating(self):
-        self.assertEqual(91, 91)
-        self.assertEqual(85, 85)
-        self.assertEqual(71, 71)
-        self.assertEqual(66, 66)
-        self.assertEqual(45, 45)
+        self.assertEqual(0.25, 5 / 20)
+        self.assertEqual(0.5, 10 / 20)
 
-        '''''
-        if get_options_ratio == 91:
+        if get_options_ratio == .91:
             return 'Excellent'
-        if get_options_ratio == 85:
+        if get_options_ratio == .85:
             return 'Very Good'
-        if get_options_ratio == 71:
+        if get_options_ratio == .71:
             return 'Good'
-        if get_options_ratio == 66:
+        if get_options_ratio == .66:
             return 'Needs Improvement'
-        if get_options_ratio == 45:
+        if get_options_ratio == .45:
             return 'Unacceptable'
-        '''''

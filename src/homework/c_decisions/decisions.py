@@ -1,5 +1,5 @@
 
-from webbrowser import get
+#from webbrowser import get
 
 option = float(input("input 'option' value:"))
 total = float(input("input 'total' value: "))
