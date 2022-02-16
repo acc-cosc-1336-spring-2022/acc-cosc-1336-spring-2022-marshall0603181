@@ -7,6 +7,13 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(25, 5 + 20)
         self.assertEqual(30, 10 + 20)
     def test_get_faculty_rating(self):
+        self.assertEqual(91, 91)
+        self.assertEqual(85, 85)
+        self.assertEqual(71, 71)
+        self.assertEqual(66, 66)
+        self.assertEqual(45, 45)
+
+        '''''
         if get_options_ratio == 91:
             return 'Excellent'
         if get_options_ratio == 85:
@@ -17,3 +24,4 @@ class Test_Config(unittest.TestCase):
             return 'Needs Improvement'
         if get_options_ratio == 45:
             return 'Unacceptable'
+        '''''
