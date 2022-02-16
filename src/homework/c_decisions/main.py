@@ -1,5 +1,5 @@
 import decisions
-from src.homework.c_decisions.decisions import get_faculty_rating
+from decisions import get_faculty_rating
 
 options = int(input())
 total = int(input())
