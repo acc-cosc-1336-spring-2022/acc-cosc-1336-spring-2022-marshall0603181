@@ -1,6 +1,3 @@
-
-#from webbrowser import get
-
 option = float(input("input dividend: "))
 total = float(input("input divisor: "))
 
@@ -8,7 +5,6 @@ def get_options_ratio(option, total):
     return option / total
 
 x = get_options_ratio(option, total)
-
 
 def get_faculty_rating(x):
     return x
