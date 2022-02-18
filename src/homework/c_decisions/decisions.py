@@ -19,3 +19,4 @@ elif x >= 0.6 and x < 0.7:
 else: 
     0 > x <= 0.59 and x < 0.6
     print('Unacceptable')
+print('Numerical rating is: ', x*100,'%')
