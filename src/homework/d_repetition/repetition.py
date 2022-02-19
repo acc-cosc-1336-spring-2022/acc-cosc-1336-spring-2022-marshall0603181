@@ -1,6 +1,4 @@
-#import math
 num = int(input('enter a number: '))
-#factorial = 1
 def get_factorial(num):
     factorial = 1
     for i in range(1, num+1):
