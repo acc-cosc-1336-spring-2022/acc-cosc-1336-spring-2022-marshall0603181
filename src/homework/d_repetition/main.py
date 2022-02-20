@@ -18,9 +18,9 @@ elif choice == 3:
 choice2 = str(input('Do you wish to continue? y or n: '))
 if choice2 == 'n':
     exit('Exiting...')
-elif choice2 == 'y':
+#elif choice2 == 'y':
     repetition.get_factorial(num)
-if choice == 1 and num > 0 and num < 10:
+#elif choice == 1 and num > 0 and num < 10:
     repetition.get_factorial(num)
 else:
     print('Error')
