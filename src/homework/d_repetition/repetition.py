@@ -6,11 +6,9 @@ def get_factorial(num):
         for i in range(1, num+1):
             factorial = factorial * i
     print('the factorial of', num, 'is', factorial)
-get_factorial(num)
 # it works!
 #num = int(input('enter number: '))
 #def sum_odd_numbers(num):
 #    while num != 0:
 #        print(num)
 #        num = 0
-#sum_odd_numbers(num)
