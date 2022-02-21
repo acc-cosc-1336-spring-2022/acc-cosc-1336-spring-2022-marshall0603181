@@ -5,7 +5,8 @@ def get_factorial(num):
     if int(num) >= 1:
         for i in range(1, num+1):
             factorial = factorial * i
-    print('the factorial of', num, 'is', factorial)
+            fact = "The factorial of {} is {}"
+    print(fact.format(num, factorial))
 get_factorial(num)
 # it works!
 
