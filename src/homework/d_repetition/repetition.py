@@ -7,12 +7,15 @@ def get_factorial(num):
             factorial = factorial * i
     print('The factorial of ', num, 'is', factorial)
 # it works!
-
-numbers = range(0, 10)
-
-def sum_odd_numbers(numbers):
-    total = 0
-    for num in numbers:
-        if int(num) % 2 == 1:
-            total += int(num)
-    print(total)
+# we need to figure out a way to add only the odd numbers 
+# up to but not exceeding num
+# in order to use a while loop, we need to make a control
+# variable that will prevent the loop from being infinite.
+def sum_odd_numbers(num):
+    x = 1
+    while x == 1:
+        for a in range(1, num - 1):
+            print(num + a)
+            if a == num - 1:
+                break
+        x = 0
