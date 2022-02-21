@@ -8,6 +8,11 @@ def get_factorial(num):
     print('The factorial of ', num, 'is', factorial)
 # it works!
 
-def sum_odd_numbers(num):
-    print('The sum of all the odd numbers before ', num, 'is'\
-        , sum_odd_numbers(num))
+numbers = range(0, 10)
+
+def sum_odd_numbers(numbers):
+    total = 0
+    for num in numbers:
+        if int(num) % 2 == 1:
+            total += int(num)
+    print(total)
