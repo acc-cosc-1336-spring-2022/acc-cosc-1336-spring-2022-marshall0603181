@@ -14,8 +14,6 @@ def get_factorial(num):
 def sum_odd_numbers(num):
     x = 1
     while x == 1:
-        for a in range(1, num - 1):
-            print(num + a)
-            if a == num - 1:
-                break
-        x = 0
+        while num % 2 == 1:
+            print('The sum of all odd numbers before ', num,\
+            'is ', sum_odd_numbers(num))
