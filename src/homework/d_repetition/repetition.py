@@ -9,6 +9,8 @@ def get_factorial(num):
     print(fact.format(num, factorial))
 # it works!
 
-#def sum_odd_numbers(num):
-#
- #   sum_odd_numbers(int(num))
+def sum_odd_numbers(num):
+    while num != 0:
+        print(num + num - 1)
+        num = 0
+    sum_odd_numbers(int(num))

@@ -1,16 +1,15 @@
 print('Homework 3 Menu')
 choice = int(input('(1) Factorial (2) Sum odd numbers (3) Exit: '))
-
+import repetition
+from repetition import num
 # choice has to do with 'Homework 3 menu'.
 if choice == 1:
-    from repetition import num
     if num > 0 and num < 10:
-        import repetition
         repetition.get_factorial(int(num))
-    else:
-        print('Error')
-#elif choice == 2:
- #   choice = int(input('Sorry that function is not yet working. Please try again: '))
+else:
+    print('Error')
+if choice == 2:
+    repetition.sum_odd_numbers(int(num))
 elif choice == 3:
     exit('Exiting...')
 
@@ -18,12 +17,9 @@ elif choice == 3:
 choice2 = str(input('Do you wish to continue? y or n: '))
 if choice2 == 'n':
     exit('Exiting...')
-#elif choice2 == 'y':
-    repetition.get_factorial(num)
-#elif choice == 1 and num > 0 and num < 10:
-    repetition.get_factorial(num)
-else:
-    print('Error')
+elif choice2 == 'y':
+    print('Homework 3 Menu')
+    choice = (int(input('(1) Factorial (2) Sum odd numbers (3) Exit: ')))
 
 
 #elif int(choice) == 2:
