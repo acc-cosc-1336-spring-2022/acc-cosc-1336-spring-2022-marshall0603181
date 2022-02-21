@@ -1,12 +1,11 @@
 print('Homework 3 Menu')
 choice = int(input('(1) Factorial (2) Sum odd numbers (3) Exit: '))
 import repetition
+from repetition import num
 # choice has to do with 'Homework 3 menu'.
 if choice == 1 and num > 0 and num < 10:
-    from repetition import num
     repetition.get_factorial(num)
 elif choice == 2:
-    from repetition import num
     repetition.sum_odd_numbers(num)
 elif choice == 3:
     exit('Exiting...')
