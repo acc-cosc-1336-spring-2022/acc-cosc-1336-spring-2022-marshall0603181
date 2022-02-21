@@ -1,4 +1,4 @@
-print('Homework 3 menu')
+print('Homework 3 Menu')
 choice = int(input('(1) Factorial (2) Sum odd numbers (3) Exit: '))
 
 # choice has to do with 'Homework 3 menu'.
