@@ -7,7 +7,6 @@ def get_factorial(num):
             factorial = factorial * i
             fact = "The factorial of {} is {}"
     print(fact.format(num, factorial))
-get_factorial(num)
 # it works!
 
 #def sum_odd_numbers(num):

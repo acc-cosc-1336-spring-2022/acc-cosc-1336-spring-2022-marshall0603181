@@ -9,8 +9,8 @@ if choice == 1:
         repetition.get_factorial(int(num))
     else:
         print('Error')
-elif choice == 2:
-    choice = int(input('Sorry that function is not yet working. Please try again: '))
+#elif choice == 2:
+ #   choice = int(input('Sorry that function is not yet working. Please try again: '))
 elif choice == 3:
     exit('Exiting...')
 
