@@ -17,3 +17,4 @@ def sum_odd_numbers(num):
         while num % 2 == 1:
             print('The sum of all odd numbers before ', num,\
             'is ', sum_odd_numbers(num))
+        x = 0

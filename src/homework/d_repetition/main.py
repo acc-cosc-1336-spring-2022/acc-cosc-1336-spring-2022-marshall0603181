@@ -19,6 +19,8 @@ if choice2 == 'n':
 elif choice2 == 'y':
     print('Homework 3 Menu')
     choice = (int(input('(1) Factorial (2) Sum odd numbers (3) Exit: ')))
+else:
+    print('Error')
 
 
 #elif int(choice) == 2:
