@@ -13,8 +13,7 @@ def get_factorial(num):
 # variable that will prevent the loop from being infinite.
 def sum_odd_numbers(num):
     x = 1
-    while x == 1:
-        while num % 2 == 1:
-            print('The sum of all odd numbers before ', num,\
+    while x == 1 and num % 2 <= 1:
+        print('The sum of all odd numbers before ', num,\
             'is ', sum_odd_numbers(num))
-        x = 0
+    x = 0
