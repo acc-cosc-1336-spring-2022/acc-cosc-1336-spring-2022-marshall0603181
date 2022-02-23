@@ -3,7 +3,7 @@ def get_factorial(num):
     if int(num) >= 1:
         for i in range(1, num+1):
             factorial = factorial * i
-    print('The factorial of ', num, 'is', factorial)
+    print(factorial)
 # it works!
 # we need to figure out a way to add only the odd numbers 
 # up to but not exceeding num
