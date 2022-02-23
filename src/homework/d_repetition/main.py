@@ -1,7 +1,7 @@
 print('Homework 3 Menu')
 choice = int(input('(1) Factorial (2) Sum odd numbers (3) Exit: '))
 import repetition
-from repetition import num
+num = int(input('enter a number: '))
 # choice has to do with 'Homework 3 menu'.
 if choice == 1 and num > 0 and num < 10:
     repetition.get_factorial(num)

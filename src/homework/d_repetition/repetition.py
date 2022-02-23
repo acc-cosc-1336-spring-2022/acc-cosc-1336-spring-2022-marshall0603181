@@ -1,5 +1,3 @@
-num = int(input('enter a number: '))
-
 def get_factorial(num):
     factorial = 1
     if int(num) >= 1:
@@ -16,5 +14,3 @@ def sum_odd_numbers(num):
     while rem == 0:
         print(num)
         break
-    if rem == 1:
-        print('Number not divisible by 2 without remainder.')
