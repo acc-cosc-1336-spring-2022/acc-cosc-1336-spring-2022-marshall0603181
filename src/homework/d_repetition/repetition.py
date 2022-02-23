@@ -12,8 +12,9 @@ def get_factorial(num):
 # in order to use a while loop, we need to make a control
 # variable that will prevent the loop from being infinite.
 def sum_odd_numbers(num):
-    x = 1
-    while x == 1 and num % 2 <= 1:
-        print('The sum of all odd numbers before ', num,\
-            'is ', sum_odd_numbers(num))
-    x = 0
+    rem = num % 2
+    while rem == 0:
+        print(num)
+        break
+    if rem == 1:
+        print('Number not divisible by 2 without remainder.')
