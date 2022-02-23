@@ -9,7 +9,7 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(720, get_factorial(6))
 
     def test_sum_odd_numbers(self):
-        self.assertEqual(16, sum_odd_numbers(8))
+        self.assertEqual(16, sum_odd_numbers(7))
         self.assertEqual(25, sum_odd_numbers(9))
         self.assertEqual(25, sum_odd_numbers(10))
         
