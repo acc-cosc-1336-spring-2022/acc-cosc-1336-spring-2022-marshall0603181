@@ -20,13 +20,6 @@ if choice2 == 'n':
     exit('Exiting...')
 elif choice2 == 'y':
     print('Homework 3 Menu')
-    choice = (int(input('(1) Factorial (2) Sum odd numbers (3) Exit: ')))
+    choice = (int(input('\n(1) Factorial \n(2) Sum odd numbers \n(3) Exit \n\n ')))
 else:
     print('Error')
-
-
-#elif int(choice) == 2:
-#from repetition import num
-#while num < 0 and num > 100
-#from repetition import num
-#repetition.sum_odd_numbers(num)
