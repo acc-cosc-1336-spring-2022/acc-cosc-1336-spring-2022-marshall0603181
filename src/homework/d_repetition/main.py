@@ -8,10 +8,11 @@ while choice2 == 'y':
         num = int(input('enter number greater than 0 and less than 10: '))
         if num > 0 and num < 10:
             print(repetition.get_factorial(num))
-        else:
+        while num <= 0 or num >= 10:
             print('Invalid entry')
             num = int(input('enter number greater than 0 and less than 10: '))
-            print(repetition.get_factorial(num))
+            if num > 0 and num < 10:
+                print(repetition.get_factorial(num))
     elif choice == 2:
         num = int(input('enter a number: '))
         print(repetition.sum_odd_numbers(num))
@@ -24,8 +25,3 @@ while choice2 == 'y':
 # choice2 has to do with the question 'Do you want to exit? y or n: '.
 if choice2 == 'n':
     exit('Exiting...')
-elif choice2 == 'y':
-    print('Homework 3 Menu')
-    choice = (int(input('\n(1) Factorial \n(2) Sum odd numbers \n(3) Exit \n\n ')))
-else:
-    print('Error')
