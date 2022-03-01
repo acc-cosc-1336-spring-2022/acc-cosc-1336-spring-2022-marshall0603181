@@ -1,4 +1,7 @@
 def get_time(hour, minutes, seconds, time_type, meridien='AM'):
+    hour = 1646119575 / 3600
+    minutes = 1646119575 % 60
+    seconds = 1646119575 / 3600 % 60
     if hour < 10:
         hour = "0" + str(hour)
 
