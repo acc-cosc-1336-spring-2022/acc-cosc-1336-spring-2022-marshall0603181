@@ -14,5 +14,6 @@ class Test_Config(unittest.TestCase):
 
     def test_local_variable_scope(self):
         val0 = 0
-        local_variable(val0)
+        val = local_variable(val0)
         self.assertEqual(0, val0)
+        self.assertEqual(0, val)

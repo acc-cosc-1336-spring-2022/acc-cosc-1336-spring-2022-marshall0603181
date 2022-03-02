@@ -10,3 +10,4 @@ def local_variable(val0):
 def main(val0):
     val = 0
     local_variable(val0)
+    return val
