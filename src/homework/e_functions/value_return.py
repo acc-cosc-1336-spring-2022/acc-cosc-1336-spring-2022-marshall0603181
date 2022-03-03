@@ -1,7 +1,4 @@
 def get_time(hour, minutes, seconds, time_type, meridien='AM'):
-    hour = 1646119575 / 3600
-    minutes = 1646119575 % 60
-    seconds = 1646119575 / 3600 % 60
     if hour < 10:
         hour = "0" + str(hour)
 
@@ -19,13 +16,13 @@ def get_time(hour, minutes, seconds, time_type, meridien='AM'):
     return  time
 
 def get_hour(epoch_seconds):
-    pass
+    return epoch_seconds // 3600
 
 def get_minutes(epoch_seconds):
-    pass
+    return (epoch_seconds // 60) % 60
 
 def get_seconds(epoch_seconds):
-    pass
+    return epoch_seconds % 60
 
 def time_from_utc(utc_offset, utc_zero):
-    return utc_zero % utc_offset
+    return utc_offset + utc_zero
