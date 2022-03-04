@@ -21,7 +21,15 @@ def use_global():
     global VAL3
     VAL3 = 100
 
-print('global call', VAL3)
+#print('global call', VAL3)
 
 def get_random_number(min, max): # user defined function with python library
     return random.randint(min, max)
+cnt = 0
+def display_random_numbers(min, max, cnt):
+    for i in range(cnt):
+        print(random.randint(min, max))
+
+
+
+#random.seed(10)
