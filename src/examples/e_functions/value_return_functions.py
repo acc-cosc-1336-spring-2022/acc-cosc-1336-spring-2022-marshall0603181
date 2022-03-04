@@ -1,3 +1,5 @@
+import random
+
 def test_config():
     return True
 
@@ -20,3 +22,6 @@ def use_global():
     VAL3 = 100
 
 print('global call', VAL3)
+
+def get_random_number(min, max): # user defined function with python library
+    return random.randint(min, max)
