@@ -27,4 +27,4 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(13, time_from_utc(-7, 20))
 
     def test_utc_time_to_pacific_standard_time(self):
-        self.assertEqual(12, time_from_utc(-8, 20))  
+        self.assertEqual(12, time_from_utc(-8, 20))
