@@ -26,4 +26,4 @@ def get_seconds(epoch_seconds):
 
 def time_from_utc(utc_offset, utc_zero):
     sum = utc_offset + utc_zero
-    return sum % 24
+    return sum % 24 
