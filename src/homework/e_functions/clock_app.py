@@ -10,4 +10,4 @@ class ClockApp(tkinter.Tk):
 
 if __name__ == '__main__':
     app = ClockApp()
-    app.mainloop() 
+    app.mainloop()  
