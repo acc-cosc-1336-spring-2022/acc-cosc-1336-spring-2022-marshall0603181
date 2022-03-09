@@ -18,6 +18,3 @@ def loop_string(str):
 
 def concat_strings(str1, str2):
     return str1 + str2
-
-def slice_strings(str):
-    return str[6:10]
