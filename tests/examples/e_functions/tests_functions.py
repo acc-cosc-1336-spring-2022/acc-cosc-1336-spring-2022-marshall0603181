@@ -1,7 +1,7 @@
 from threading import local
 import unittest
 
-from src.examples.e_functions.value_return_functions import test_config
+from src.examples.e_functions.value_return_functions import return_first_last_name, test_config
 from src.examples.e_functions.value_return_functions import local_variable
 from src.examples.e_functions.value_return_functions import get_random_number
 
