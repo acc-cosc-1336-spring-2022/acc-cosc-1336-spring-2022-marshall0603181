@@ -23,3 +23,5 @@ class Test_Config(unittest.TestCase):
         rand = get_random_number(1, 100)
         flag = rand >= 1 and rand <= 100
         self.assertEqual(flag, True)
+
+    
