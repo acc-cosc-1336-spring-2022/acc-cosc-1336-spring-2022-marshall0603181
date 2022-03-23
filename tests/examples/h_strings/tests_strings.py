@@ -10,3 +10,7 @@ class Test_Config(unittest.TestCase):
 
     def test_concat_strings(self):
         self.assertEqual("john doe", concat_strings("john ", "doe"))
+
+    def test_string_repetition(self):
+        str = 'w' * 5
+        self.assertEqual(str, 'wwwww')
