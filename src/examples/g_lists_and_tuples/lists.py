@@ -7,3 +7,13 @@ def loop_list_w_while(num):
     while i < 4:
         print(num)
         i += 1
+
+def collect_home_values():
+    home_values = [0] * 5
+    indx = 0
+    while indx < len(home_values):
+        home_values[indx] = int(input('input home value: '))
+        indx += 1
+
+    for v in home_values:
+        print(v)
