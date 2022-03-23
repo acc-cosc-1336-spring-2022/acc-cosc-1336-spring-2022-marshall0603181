@@ -12,3 +12,4 @@ import lists
 #for n in nums:
 #    print(n)
     
+lists.collect_home_values()
