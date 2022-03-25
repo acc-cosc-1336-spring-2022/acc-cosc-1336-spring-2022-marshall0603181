@@ -12,4 +12,16 @@ import lists
 #for n in nums:
 #    print(n)
     
-lists.collect_home_values()
+#lists.collect_home_values()
+
+list1 = []
+
+add_more = "y"
+
+while(add_more) == "y":
+    item1 = input("enter item ")
+    list1.append_item_to_list(item1, list1)
+    add_more = input("Enter y to continue")
+
+for item in list1:
+    print(item)

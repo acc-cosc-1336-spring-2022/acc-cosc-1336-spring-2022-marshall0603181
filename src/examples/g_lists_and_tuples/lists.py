@@ -17,3 +17,6 @@ def collect_home_values():
 
     for v in home_values:
         print(v)
+
+def append_item_to_list(item1, list1):
+    list1.append(item1)
