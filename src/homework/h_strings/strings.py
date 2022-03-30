@@ -1,5 +1,7 @@
 from re import X
-
+dna1 = 0
+dna2 = 0
+dna = 0
 
 def get_hamming_distance(dna1, dna2):
     pass
