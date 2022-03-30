@@ -8,4 +8,3 @@ class Test_Config(unittest.TestCase):
 
     def test_get_dna_complement(self):
         self.assertEqual("ACCGGGTTTT", get_dna_complement("AAAACCCGGT"))
-
