@@ -1,4 +1,5 @@
 from re import X
+
 def reverse_string(string):
     rstr1 = ""
     indx = len(string)
