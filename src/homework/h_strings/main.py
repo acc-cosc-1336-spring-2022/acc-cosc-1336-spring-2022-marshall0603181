@@ -1,7 +1,4 @@
 import strings
-dna1 = 0
-dna2 = 0
-dna = 0
 choice1 = ''
 while choice1 != '3':
     choice1 = str(input("1-Hamming Distance \n 2-Dna Complement \n 3-Exit \n"))
