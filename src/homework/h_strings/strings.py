@@ -16,7 +16,7 @@ def get_hamming_distance(dna1, dna2):
     lt_dna1 = list(dna1)
     lt_dna2 = list(dna2)
     cnt = 0
-    for i in range(17):
+    for i in range(len(lt_dna1)):
         if lt_dna1[i] != lt_dna2[i]:
             cnt += 1
     return cnt
@@ -26,7 +26,7 @@ def get_hamming_distance(dna1, dna2):
 def get_dna_complement(dna):
     reverse = reverse_string(dna)
     n_rvrs = list(reverse)
-    for i in range(10):
+    for i in range(len(n_rvrs)):
         if n_rvrs[i] == "T":
             n_rvrs[i] = "A"
         elif n_rvrs[i] == "A":
