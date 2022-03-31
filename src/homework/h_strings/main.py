@@ -7,7 +7,7 @@ while choice1 != '3':
         dna2 = str(input('enter dna2 (ALL CAPS): '))
         print(strings.get_hamming_distance(dna1, dna2))
     elif choice1 == '2':
-        dna = str(input('enter dna 10 characters long: '))
+        dna = str(input('enter dna (ALL CAPS): '))
         print(strings.get_dna_complement(dna))
     elif choice1 == '3':
         exit("Exiting...")
