@@ -27,8 +27,8 @@ print(mixed_up[999])
 print(mixed_up[3,6,9])
 
 #loop over the keys
-for key in mixed_up.values():
-    print(key, mixed_up[key])
+#for key in mixed_up.values():
+    #print(key, mixed_up[key])
 
 print(phonebook.get('Chris'))
 
@@ -37,3 +37,13 @@ for key, value in phonebook.items():
     print(key, value)
 
 print(phonebook)
+
+for key in phonebook.keys():
+    print(key)
+
+for v in phonebook.values():
+    print(v)
+
+k,v = phonebook.popitem()
+
+print(k,v)
