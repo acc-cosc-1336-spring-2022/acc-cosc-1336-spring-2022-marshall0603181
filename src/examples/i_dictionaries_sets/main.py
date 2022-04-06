@@ -1,5 +1,21 @@
 # #main program
 
+# import dictionaries
+import sets
+
+sets.get_a_set()
+
+myset1 = set('abc')
+
+print(myset1)
+
+myset2 = set(['one', 'two', 'three'])
+print(len(myset2))
+
+myset2.add('four')
+myset2.add('five')
+print(myset2)
+
 # phonebook = {'Chris':'555-1111', 'Katie':'555-2222', 'Joanne':'555-3333'}
 
 # print(phonebook['Katie'])

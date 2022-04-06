@@ -6,3 +6,4 @@ def add_friend(name, key, bday, bdaydictionary):
 
 def update_friend(name, bday, bdaydictionary):
     bdaydictionary[name] = bday
+
