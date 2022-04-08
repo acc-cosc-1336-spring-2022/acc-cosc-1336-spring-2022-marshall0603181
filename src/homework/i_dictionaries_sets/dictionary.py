@@ -1,13 +1,12 @@
-
-
+#
 def get_p_distance(list1, list2):
     indx = 0
-    difference = 0
+    diff = 0
     while indx < len(list1):
         if list1[indx] != list2[indx]:
-            difference += 1
+            diff += 1
         indx += 1
-    p_distance = difference / len(list1)
+    p_distance = diff / len(list1)
     return p_distance
 
 def get_p_distance_matrix(list1):
