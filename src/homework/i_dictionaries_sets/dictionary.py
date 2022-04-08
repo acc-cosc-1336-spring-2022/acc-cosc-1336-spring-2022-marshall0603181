@@ -1,4 +1,4 @@
-#
+list1 = []
 def get_p_distance(list1, list2):
     indx = 0
     diff = 0
