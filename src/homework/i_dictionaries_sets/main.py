@@ -3,8 +3,9 @@ from dictionary import list1
 choice = "y"
 
 while choice == "y":
-    choice = str(input("(1) Get p distance matrix \n (2) Exit"))
+    choice = str(input("(1) Get p distance matrix \n (2) Exit \n"))
     if choice == "1":
+        list1 = str(input("Please enter list: "))
         print(dictionary.get_p_distance_matrix(list1))
     elif choice == "2":
         exit("Exiting...")
