@@ -18,4 +18,4 @@ def get_p_distance_matrix(list1):
         p_distance_matrix.append(row)
     return p_distance_matrix
 
-# Dave also helped me with this.
+# Dave also helped me with this via GroupMe.
