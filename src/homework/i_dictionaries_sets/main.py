@@ -1,13 +1,45 @@
 import dictionary
 
-choice = "0"
+choice1 = "y"
+while choice1 == "y":
+    choice1 = str(input("Homework 6 Menu\n(1) Get p distance matrix\n(2) Exit\nEnter 1 or 2: \n"))
 
-while choice  != "2":
-    choice = str(input("(1) Get p distance matrix \n(2) Exit \n"))
-    if choice == "1":
-        list1 = list(input("Please enter list: "))
-        print(dictionary.get_p_distance_matrix(list1))
-    elif choice == "2":
+    if choice1 == "1": #the choice for the get_p_distance matrix function
+        print("Enter two DNA strings of 10 characters or less. \nYou must only enter the letters of the DNA strings with no spaces between them.\n")
+        list1 = []
+        continue_ = "y"
+        while continue_ == "y":
+            dna_string = str(input("Enter a DNA string using the format: XXXXXX\n"))
+            dna_list = list(dna_string)
+            list1.append(dna_list)
+            print("Do you wish to add an additional DNA string?")
+            continue_ = str(input("Enter y for yes or n for no: "))
+        print("You have entered: ")
+        for string in list1:
+            print(string)
+        print("The following is the p distance matrix for the entered strings: ")
+        p_distance_matrix = dictionary.get_p_distance_matrix(list1)
+        for row in p_distance_matrix:
+            for item in row:
+                print(format(item, '8.3f'), end = '')
+            print('')
+
+    elif choice1 == "2":
+        print("You have chosen exit.\n")
         exit("Exiting...")
+
     else:
-        choice = str(input("Error...Please enter a valid choice: \n(1) Get p distance matrix \n(2) Exit \n"))
+        print("Invalid entry...\nHomework 6 Menu\n(1) Get p distance matrix\n(2) Exit")
+        choice1 = str(input("Invalid entry...\nHomework 6 Menu\n(1) Get p distance matrix\n(2) Exit\nEnter 1 or 2: \n"))
+    choice1 = 'y'
+# choice = "0"
+
+# while choice  != "2":
+#     choice = str(input("(1) Get p distance matrix \n(2) Exit \n"))
+#     if choice == "1":
+#         list1 = list(input("Please enter list: "))
+#         print(dictionary.get_p_distance_matrix(list1))
+#     elif choice == "2":
+#         exit("Exiting...")
+#     else:
+#         choice = str(input("Error...Please enter a valid choice: \n(1) Get p distance matrix \n(2) Exit \n"))
