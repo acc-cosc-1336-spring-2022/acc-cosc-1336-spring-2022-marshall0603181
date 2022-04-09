@@ -1,7 +1,4 @@
 #
-list2 = []
-list3 = []
-list4 = []
 def get_p_distance(list1, list2):
     i = 0
     _diff_ = 0
