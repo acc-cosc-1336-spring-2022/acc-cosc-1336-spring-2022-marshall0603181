@@ -1,4 +1,4 @@
-#
+
 def get_p_distance(list1, list2):
     i = 0
     _diff_ = 0
@@ -18,3 +18,4 @@ def get_p_distance_matrix(list1):
         p_distance_matrix.append(row)
     return p_distance_matrix
 
+# Dave also helped me with this.

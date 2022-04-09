@@ -4,7 +4,7 @@ choice1 = "y"
 while choice1 == "y":
     choice1 = str(input("Homework 6 Menu\n(1) Get p distance matrix\n(2) Exit\nEnter 1 or 2: \n"))
 
-    if choice1 == "1": #the choice for the get_p_distance matrix function
+    if choice1 == "1": # the choice for the get_p_distance matrix function
         print("Enter two DNA strings of 10 characters or less. \nYou must only enter the letters of the DNA strings with no spaces between them.\n")
         list1 = []
         continue_ = "y"
@@ -24,7 +24,7 @@ while choice1 == "y":
                 print(format(item, '8.3f'), end = '')
             print('')
 
-    elif choice1 == "2":
+    elif choice1 == "2": # the choice to exit the program
         print("You have chosen exit.\n")
         exit("Exiting...")
 
@@ -32,14 +32,5 @@ while choice1 == "y":
         print("Invalid entry...\nHomework 6 Menu\n(1) Get p distance matrix\n(2) Exit")
         choice1 = str(input("Invalid entry...\nHomework 6 Menu\n(1) Get p distance matrix\n(2) Exit\nEnter 1 or 2: \n"))
     choice1 = 'y'
-# choice = "0"
 
-# while choice  != "2":
-#     choice = str(input("(1) Get p distance matrix \n(2) Exit \n"))
-#     if choice == "1":
-#         list1 = list(input("Please enter list: "))
-#         print(dictionary.get_p_distance_matrix(list1))
-#     elif choice == "2":
-#         exit("Exiting...")
-#     else:
-#         choice = str(input("Error...Please enter a valid choice: \n(1) Get p distance matrix \n(2) Exit \n"))
+# Dave helped me with this via GroupMe.
