@@ -37,7 +37,7 @@ import dictionary
 
 choice1 = 'y'
 while choice1 == 'y':
-    choice1 = str(input("Homework 7 Menu\n(1) Add or Update Item\n(2) Delete Item\n(3) Exit"))
+    choice1 = str(input("Homework 7 Menu\n(1) Add or Update Item\n(2) Delete Item\n(3) Exit\n"))
     if choice1 == "1":
         print('Please add or update your widgets item.')
         widget_name = str(input('Enter name of item: '))
