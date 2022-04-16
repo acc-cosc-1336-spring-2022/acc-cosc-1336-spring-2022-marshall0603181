@@ -34,27 +34,26 @@ import dictionary
 #     choice1 = 'y'
 
 # Dave helped me with this via GroupMe.
-
+widgets = {}
 choice1 = 'y'
 while choice1 == 'y':
-    choice1 = str(input("Homework 7 Menu\n(1) Add or Update Item\n(2) Delete Item\n(3) Exit\n"))
-    if choice1 == "1":
-        print('Please add or update your widgets item.')
-        widget_name = str(input('Enter name of item: '))
-        widget_quantity = int(input('Enter quantity of item added to widgets (as a positive number) or subtracted from widgets (as a negative number): '))
-        widgets = {}
+    choice2 = str(input("Homework 7 Menu\n(1) Add or Update Item\n(2) Delete Item\n(3) Exit\n"))
+    if choice2 == "1":
+        print('Please add or update your widgets item.\n')
+        widget_name = str(input('Enter name of item: \n'))
+        widget_quantity = int(input('Enter quantity of item added to widgets (as a positive number) or subtracted from widgets (as a negative number): \n'))
         dictionary.add_inventory(widgets, widget_name, widget_quantity)
 
-    elif choice1 == 2:
-        widget_name = input("Enter name for the item to be deleted: ")
+    elif choice2 == 2:
+        widget_name = input("Enter name for the item to be deleted: \n")
         dictionary.remove_inventory_widget(widgets, widget_name)
 
-    elif choice1 == 3:
+    elif choice2 == 3:
         exit("Exiting...")
 
     else:
         print("invalid entry")
 
-    choice1 = str(input("Would you like to continue back to the menu? y for yes or n for no"))
-    if choice1 == 'n':
+    choice3 = str(input("Would you like to continue back to the menu? y for yes or n for no:\n"))
+    if choice3 == 'n':
         exit("Exiting...")
