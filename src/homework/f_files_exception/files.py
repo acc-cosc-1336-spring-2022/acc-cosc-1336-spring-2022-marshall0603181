@@ -10,8 +10,8 @@
 #     else:
 #         print('Item not found')
 
-def write_to_file(file_name, file_write):
-    f = open('C:/Users/marsh/acc_files/test.txt', "w")
+def edit_file(file_name, file_write):
+    f = open(file_name, "a")
     f.write(file_write)
     f.close()
 
