@@ -1,5 +1,5 @@
 import files
-items = {}
+
 choice1 = 'y'
 while choice1 == 'y':
     choice2 = str(input("Homework 7 Menu\n(1) Write text into a file\n(2) Display text in file\n(3) Exit\n"))
