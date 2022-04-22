@@ -1,3 +1,4 @@
+import os.path
 # def add_inventory_item(items, item_name, item_quantity):
 #     if item_name not in items:
 #         items[item_name] = item_quantity
@@ -12,6 +13,10 @@
 
 def edit_file(file_name, file_write):
     f = open(file_name, "a")
+    try:
+        os.path.exists(file_name)
+    except:
+        file_name.open(file_name, "x")
     f.write(file_write)
     print(f.read(file_name))
     f.close()
@@ -19,3 +24,9 @@ def edit_file(file_name, file_write):
 def read_from_file(file_name):
     f = open(file_name, "r")
     print(f.read())
+
+def delete_file(file_name):
+    if os.path.exists(file_name):
+        os.remove(file_name)
+    else:
+        print("The file does not exist")
