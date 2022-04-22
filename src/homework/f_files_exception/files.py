@@ -13,8 +13,9 @@
 def edit_file(file_name, file_write):
     f = open(file_name, "a")
     f.write(file_write)
+    print(f.read(file_name))
     f.close()
-
+    
 def read_from_file(file_name):
     f = open(file_name, "r")
     print(f.read())
