@@ -13,4 +13,7 @@ class Bottle:
     def recycle(self):
         print("Recycling...")
     
-    
+bottle1 = Bottle(473, "water")
+
+print(bottle1.volume) # 473
+print(bottle1.type_) # water
