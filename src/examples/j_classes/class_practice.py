@@ -1,4 +1,4 @@
- 
+
 class Bottle:
     def __init__(self, volume, type_):
         self.volume = volume
