@@ -1,12 +1,11 @@
 import random
 
-class die:
+class Die:
 
     def roll(self):
-        random.randint(1, 7)
-
-    def get_rolled_value(self):
-        return self.roll()
+        return random.randint(1, 6)
 
     def __str__(self):
-        print("The rolled value is " + str(self.get_rolled_value()))
+        print("The roll is", str(self.roll()))
+
+die = Die()

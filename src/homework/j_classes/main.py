@@ -1,13 +1,14 @@
-import class_a
+from class_a import die
 def menu():
-    print("(1) Roll die\n(2) Exit")
     menu_choice = 0
     while menu_choice != "2":
+        print("(1) Roll die\n(2) Exit")
         menu_choice = input("Please enter menu option: ")
+        
 
         if menu_choice == "1":
-            pass
+            die.__str__()
         elif menu_choice == "2":
-            exit()
+            exit("Exiting...")
 
 menu()

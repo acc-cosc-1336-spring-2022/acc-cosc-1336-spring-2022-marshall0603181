@@ -1,7 +1,14 @@
 import unittest
 
-from src.homework.j_classes.class_a import die
+from src.homework.j_classes.class_a import Die
 
 class Test_Config(unittest.TestCase):
-    def test_get_rolled_value(self):
-        self.assertEqual(die.get_rolled_value(self), [1, 2, 3, 4, 5, 6])
+
+    def test_roll1(self):
+        self.assertIn(Die.roll(self), [1,2,3,4,5,6])
+
+    def test_roll2(self):
+        self.assertIn(Die.roll(self), [1,2,3,4,5,6])
+
+    def test_roll3(self):
+        self.assertIn(Die.roll(self), [1,2,3,4,5,6])
