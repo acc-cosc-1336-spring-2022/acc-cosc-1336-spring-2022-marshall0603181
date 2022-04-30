@@ -1,4 +1,4 @@
-from class_a import die
+import class_a
 def menu():
     menu_choice = 0
     while menu_choice != "2":
@@ -7,7 +7,7 @@ def menu():
         
 
         if menu_choice == "1":
-            die.__str__()
+            class_a.die.__str__()
         elif menu_choice == "2":
             exit("Exiting...")
 
