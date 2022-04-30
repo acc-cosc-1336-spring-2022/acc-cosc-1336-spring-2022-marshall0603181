@@ -1,9 +1,8 @@
 import random
-class Die:
-    def roll():
-        roll_value = random.randint(1,7)
-        return roll_value
-    def get_rolled_value(roll_value):
-        print("The rolled value is ", roll_value,".")
-        
-    
+class die:
+    def roll(self):
+        self.roll_value = random.randint(1, 7)
+    def get_rolled_value(self):
+        return self.roll_value
+    def __str__(self):
+        return "The rolled value is " + self.get_rolled_value
