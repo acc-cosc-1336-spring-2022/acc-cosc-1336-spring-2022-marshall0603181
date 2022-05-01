@@ -12,4 +12,17 @@ class Die:
     def __str__(self):
         print("You rolled {}!".format(self.get_rolled_value()))
 
+# this works too
+    
+# class Die:
+
+#     def roll(self):
+#         random.randint(1,6)
+#         return
+
+#     def __str__(self):
+#         print("You rolled {}!".format(self.roll()))
+
+
 die = Die()
+
